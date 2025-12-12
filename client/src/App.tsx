@@ -5,7 +5,7 @@ function App() {
 
   const fetchMessage = async () => {
     try {
-      const request = await fetch("http://localhost:8000/api/message");
+      const request = await fetch("http://34.227.119.152:8000/api/message");
       const response = await request.json()
       setMessage(response.message);
     } catch (error) {
